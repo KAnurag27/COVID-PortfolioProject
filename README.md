@@ -1,4 +1,4 @@
-<h1>Data Analysis using SQL on COVID Data</h1>
+<h1>Data Analysis & Visualization on COVID Data</h1>
 
 <h2>Description</h2>
 In this project, I utilized Microsoft SQL Server to develop a perform a data analytics exercise on understanding the depth behind <b>Coronavirus (COVID-19) Deaths</b>. Leveraging the data & resourceful insights retrieved from renowned sources, I have interpreted and examined the data in the most efficient manner possible. Afterwards, I have taken out the most crucial insights out of my SQL analysis and expressed them using <b>Tableau Visualizations</b>.
