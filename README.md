@@ -55,3 +55,6 @@ Rigorous testing and meticulous debugging were instrumental in ensuring the accu
 <b>Conclusion:</b>
 This SQL project stands as a testament to my proficiency in data analysis, database management, and SQL query optimization. Through this enriching experience, I have acquired invaluable skills that I eagerly anticipate applying to future projects and further exploring the vast world of SQL. The depth of insights and precision achieved in this endeavor highlights my dedication to excellence and innovation in data analysis using SQL.
 
+<h2>Project Output:</h2>
+- https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/COVID%20Portfolio%20Project.sql </br> - https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Covid%20Dashboard.twbx
+
