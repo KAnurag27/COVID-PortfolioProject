@@ -2,16 +2,17 @@
 
 <h2>Description</h2>
 In this project, I utilized Microsoft SQL Server to develop a perform a data analytics exercise on understanding the depth behind <b>Coronavirus (COVID-19) Deaths</b>. Leveraging the data & resourceful insights retrieved from renowned sources, I have interpreted and examined the data in the most efficient manner possible.
-<br />
+
+</br>
+Explore the dataset here: https://ourworldindata.org/covid-deaths
 
 <h2>Key Features</h2>
 - Designed a robust database schema that adheres to industry best practices, ensuring data integrity and scalability.
 <br />
 - Developed a set of optimized SQL queries to perform complex data operations efficiently, enhancing system performance.
 <br />
-- Implemented a user-friendly interface using [mention any tools or frameworks used], enabling easy interaction with the database.
-<br />
-- Utilized advanced SQL techniques such as [mention any specific techniques used, e.g., joins, subqueries, stored procedures to achieve specific project goals.
+- Utilized advanced SQL techniques such as [mention any specific techniques used, e.g., joins, subqueries, stored procedures to achieve specific 
+  project goals.
 <br />
 - Conducted rigorous testing and optimization to ensure the database operates flawlessly with large datasets, guaranteeing reliable performance.
 <br />
@@ -28,26 +29,26 @@ In this project, I utilized Microsoft SQL Server to develop a perform a data ana
 <h2>Program walk-through:</h2>
 
 <b>Introduction and Project Overview:</b>
-Hello everyone! I embarked on this project to create a powerful database management solution using Microsoft SQL Server. My primary goal was to design a database that could efficiently store, retrieve, and manipulate data for ---------------.
+This project showcases my expertise in creating a powerful database management solution using Microsoft SQL Server. My primary goal was to design a comprehensive database capable of efficiently storing, retrieving, and analyzing data related to COVID-19 deaths. The project's significance lies in its potential to uncover critical insights that can aid in understanding the pandemic's impact and inform public health strategies.
 
 <b>Database Design and Schema:</b>
-I started by carefully planning and designing the database schema. With a clear understanding of the entities, relationships, and attributes my database needed, I laid the foundation for a robust system. I learned about normalization techniques and applied them to eliminate data redundancy and ensure data integrity.
+I began this project with meticulous planning and thoughtful design of the database schema. By gaining a deep understanding of the entities, relationships, and attributes necessary, I crafted a robust foundation that adhered to industry best practices, ensuring data integrity and enabling seamless scalability.
 
 <b>Creating the Database:</b>
-Armed with the schema design, I used SQL Server Management Studio (SSMS) to create a new database from scratch. It was a thrilling experience executing SQL queries to define tables, set primary keys, and establish relationships based on the design I had meticulously crafted.
+With a clear schema design in hand, I expertly executed SQL queries in SQL Server Management Studio (SSMS) to create a new and powerful database from scratch. This exciting process involved defining tables, setting primary keys, and establishing relationships based on the carefully crafted design.
 
 <b>Importing Data:</b>
-I also had the opportunity to import some initial data into the database. This step allowed me to work with real-world data and see how my database handled information from external data portals.
+An essential step in this project was importing real-world data into the database, enabling me to work with actual COVID-19 data from renowned sources. This experience allowed me to witness how the database handled and processed information from external data portals, further validating its efficiency and reliability.
 
 <b>Writing SQL Queries:</b>
-The heart of the project was writing SQL queries. I started with the basics, crafting SELECT, INSERT, UPDATE, and DELETE queries to interact with the database. It was empowering to see my queries retrieve, add, modify, and delete data effortlessly.
+The heart of this project lies in the extensive SQL queries I skillfully crafted. From fundamental operations like SELECT, INSERT, UPDATE, and DELETE, to more sophisticated techniques like JOINs, subqueries, aggregate functions, and stored procedures, my queries adeptly manipulated data, showcasing the depth of my SQL expertise.
 
 <b>Advanced SQL Techniques:</b>
-As my confidence grew, I explored more advanced SQL concepts. I tackled JOINs, subqueries, aggregate functions, stored procedures, and views. These techniques elevated the functionality of my database and opened new possibilities for data manipulation.
+As the project progressed, I fearlessly delved into advanced SQL concepts, employing intricate JOINs, subqueries, and other powerful techniques to elevate the database's functionality. The incorporation of aggregate functions and stored procedures further enriched the data analysis capabilities, allowing for more insightful and complex operations.
 
 <b>Testing and Debugging:</b>
-Thorough testing and debugging were crucial steps to ensure the accuracy and reliability of my SQL queries. I encountered and resolved various challenges along the way, which strengthened my problem-solving skills.
+Rigorous testing and meticulous debugging were instrumental in ensuring the accuracy and reliability of my SQL queries. This critical step sharpened my problem-solving skills and attested to the project's exceptional quality.
 
 <b>Conclusion:</b>
-This SQL project has been an incredible learning journey for me. I am proud of the database management solution I created and the valuable skills I have acquired. As I conclude this project, I am excited to apply my newfound knowledge to future endeavors and continue exploring the vast world of SQL.
+This SQL project stands as a testament to my proficiency in data analysis, database management, and SQL query optimization. Through this enriching experience, I have acquired invaluable skills that I eagerly anticipate applying to future projects and further exploring the vast world of SQL. The depth of insights and precision achieved in this endeavor highlights my dedication to excellence and innovation in data analysis using SQL.
 
