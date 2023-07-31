@@ -97,6 +97,7 @@ join ProjectPortfolio..CovidDeaths2 dea
 where dea.continent is not null and dea.location = 'India'
 order by 2,3
 ```
-## Dataset 
+## Dashboard Report 
 Have a look at the complete [TABLEAU](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Covid%20Dashboard.twbx) report to observe the insights and trends derived from the analysis.
+<br></br>![Dashboard](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Tableau%20Dashboard%20-%20COVID%20Project.png)
 
