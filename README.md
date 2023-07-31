@@ -1,23 +1,16 @@
 <h1>Data Analysis & Visualization on COVID Data</h1>
 
 <h2>Description</h2>
-In this project, I utilized Microsoft SQL Server to develop a perform a data analytics exercise on understanding the depth behind <b>Coronavirus (COVID-19) Deaths</b>. Leveraging the data & resourceful insights retrieved from renowned sources, I have interpreted and examined the data in the most efficient manner possible. Afterwards, I have taken out the most crucial insights out of my SQL analysis and expressed them using <b>Tableau Visualizations</b>.
+In this project, I utilized Microsoft SQL Server to develop a perform a data analytics exercise on understanding the depth behind <b>Coronavirus (COVID-19) Deaths</b>. Leveraging the data & resourceful insights retrieved from renowned sources, I have interpreted and examined the data in the most efficient manner possible. Afterwards, I have taken out the most crucial insights out of my SQL analysis and expressed them using <b>Tableau</b>.
 <br> </br>
 Explore the dataset here: <b>https://ourworldindata.org/covid-deaths</b>
 
 
 
+<h2>Understanding the Dataset</h2>
+- <b></b>
+- <b>Tableau</b>
 
-<h2>Key Features</h2>
-- Designed a robust database schema that adheres to industry best practices, ensuring data integrity and scalability.
-<br />
-- Developed a set of optimized SQL queries to perform complex data operations efficiently, enhancing system performance.
-<br />
-- Utilized advanced SQL techniques such as [mention any specific techniques used, e.g., joins, subqueries, stored procedures to achieve specific 
-  project goals.
-<br />
-- Conducted rigorous testing and optimization to ensure the database operates flawlessly with large datasets, guaranteeing reliable performance.
-<br />
 
 <h2>Technologies Used</h2>
 
