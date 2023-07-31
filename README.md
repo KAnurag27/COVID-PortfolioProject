@@ -98,6 +98,6 @@ where dea.continent is not null and dea.location = 'India'
 order by 2,3
 ```
 ## Dashboard Report 
-Have a look at the complete [TABLEAU](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Covid%20Dashboard.twbx) report to observe the insights and trends derived from the analysis.
+Have a look at the complete [TABLEAU](https://public.tableau.com/views/CovidDashboard_16905681686080/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) report to observe the insights and trends derived from the analysis.
 <br></br>![Dashboard](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Tableau%20Dashboard%20-%20COVID%20Project.png)
 
