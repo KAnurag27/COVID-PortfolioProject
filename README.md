@@ -2,15 +2,24 @@
 
 <h2>Description</h2>
 In this project, I utilized Microsoft SQL Server to develop a perform a data analytics exercise on understanding the depth behind <b>Coronavirus (COVID-19) Deaths</b>. Leveraging the data & resourceful insights retrieved from renowned sources, I have interpreted and examined the data in the most efficient manner possible. Afterwards, I have taken out the most crucial insights out of my SQL analysis and expressed them using <b>Tableau</b>.
-<br> </br>
-Explore the dataset here: <b>https://ourworldindata.org/covid-deaths</b>
+</br>
 
+## Steps
+ 1. Data Preprocessing : Removing empty records, editing textual errors and altering datatypes, for eg: nvarchar to float.
+ 2. Querying and Exploring data using SQL on Microsoft SQL Server.
+ 3. Exporting data in the form of summarized tables and visualizing it using <b>Tableau Public Software</b>.
 
-
-<h2>Understanding the Dataset</h2>
-- <b></b>
-- <b>Tableau</b>
-
+## Dataset 
+The COVID-19 dataset is available [HERE](https://ourworldindata.org/covid-deaths).</br>It contains information about countries: Cases, Deaths, Vaccinations,  Demographics...etc 
+|Columns  | details  |
+|--|--|
+|iso_code  | Country id  |
+|Date |date of reported numbers |
+| Location |Country  |
+| new_cases |number of new cases  |
+| Population |number of inhabitant per country    |
+| new_vaccination|daily number of vaccinations   |
+| new_deaths|daily number of death cases  |
 
 <h2>Technologies Used</h2>
 
@@ -18,36 +27,76 @@ Explore the dataset here: <b>https://ourworldindata.org/covid-deaths</b>
 - <b>Microsoft Excel</b>
 - <b>Tableau</b>
 
-<h2>Environments Used </h2>
+## SQL Queries 
+All queries [HERE](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/COVID%20Portfolio%20Project.sql)<br></br>
+Below is the glimpse of a few SQL queries: 
+<br></br>Total Cases vs Total deaths
+```sql
+SELECT 
+    Location, 
+    date, 
+    total_deaths, 
+    total_cases,
+    CAST(total_deaths AS FLOAT) / NULLIF(total_cases, 0)*100 AS DeathPercentage
+FROM 
+    ProjectPortfolio..CovidDeaths2
+WHERE 
+    location = 'India'
+ORDER by 1,2
+```
+Total cases vs Population
+```sql
+SELECT 
+    Location, 
+    date, 
+    Population,
+	total_vaccinations,
+	CAST(total_vaccinations AS FLOAT) / NULLIF(population, 0)*100 AS VaccinationPercentage
+FROM 
+    ProjectPortfolio..CovidVaccinations
+WHERE 
+    location = 'India'
+ORDER by 1,2
 
-- <b>Windows 11</b> (21H2)
+```
 
-<h2>Program walk-through:</h2>
+Top 10 countries having the highest number of covid cases
 
-<b>Introduction and Project Overview:</b>
-This project showcases my expertise in creating a powerful database management solution using Microsoft SQL Server. My primary goal was to design a comprehensive database capable of efficiently storing, retrieving, and analyzing data related to COVID-19 deaths. The project's significance lies in its potential to uncover critical insights that can aid in understanding the pandemic's impact and inform public health strategies.
+```sql
+SELECT 
+    Location, 
+	population,
+	max(total_cases) as HighestInfectionCount,
+	max(cast(total_cases as FLOAT)/nullif(population,0))*100 as PercentPopulationInfected
+FROM 
+    ProjectPortfolio..CovidDeaths2
+Group by location,population
+order by PercentPopulationInfected desc
 
-<b>Database Design and Schema:</b>
-I began this project with meticulous planning and thoughtful design of the database schema. By gaining a deep understanding of the entities, relationships, and attributes necessary, I crafted a robust foundation that adhered to industry best practices, ensuring data integrity and enabling seamless scalability.
+```
+Countries with highest death count per population 
+```sql
+SELECT 
+    Location, 
+	max(cast(total_deaths as int)) as TotalDeathCount
+FROM ProjectPortfolio..CovidDeaths2   
+where continent is not null
+Group by location
+order by TotalDeathCount desc
+```
+Total Population vs Vaccinations
 
-<b>Creating the Database:</b>
-With a clear schema design in hand, I expertly executed SQL queries in SQL Server Management Studio (SSMS) to create a new and powerful database from scratch. This exciting process involved defining tables, setting primary keys, and establishing relationships based on the carefully crafted design.
+```sql
 
-<b>Importing Data:</b>
-An essential step in this project was importing real-world data into the database, enabling me to work with actual COVID-19 data from renowned sources. This experience allowed me to witness how the database handled and processed information from external data portals, further validating its efficiency and reliability.
-
-<b>Writing SQL Queries:</b>
-The heart of this project lies in the extensive SQL queries I skillfully crafted. From fundamental operations like SELECT, INSERT, UPDATE, and DELETE, to more sophisticated techniques like JOINs, subqueries, aggregate functions, and stored procedures, my queries adeptly manipulated data, showcasing the depth of my SQL expertise.
-
-<b>Advanced SQL Techniques:</b>
-As the project progressed, I fearlessly delved into advanced SQL concepts, employing intricate JOINs, subqueries, and other powerful techniques to elevate the database's functionality. The incorporation of aggregate functions and stored procedures further enriched the data analysis capabilities, allowing for more insightful and complex operations.
-
-<b>Testing and Debugging:</b>
-Rigorous testing and meticulous debugging were instrumental in ensuring the accuracy and reliability of my SQL queries. This critical step sharpened my problem-solving skills and attested to the project's exceptional quality.
-
-<b>Conclusion:</b>
-This SQL project stands as a testament to my proficiency in data analysis, database management, and SQL query optimization. Through this enriching experience, I have acquired invaluable skills that I eagerly anticipate applying to future projects and further exploring the vast world of SQL. The depth of insights and precision achieved in this endeavor highlights my dedication to excellence and innovation in data analysis using SQL.
-
-<h2>Project Output:</h2>
-- https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/COVID%20Portfolio%20Project.sql </br> - https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Covid%20Dashboard.twbx
+select dea.continent,dea.location,dea.date,dea.population,vac.new_vaccinations
+	,sum(convert(BIGINT,vac.new_vaccinations)) OVER (Partition by dea.location order by dea.location,dea.date) as RollingPeopleVaccinated
+from ProjectPortfolio..CovidVaccinations vac
+join ProjectPortfolio..CovidDeaths2 dea
+	on dea.location=vac.location
+	and dea.date = vac.date
+where dea.continent is not null and dea.location = 'India'
+order by 2,3
+```
+## Dataset 
+Have a look at the complete [TABLEAU](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Covid%20Dashboard.twbx) report to observe the insights and trends derived from the analysis.
 
