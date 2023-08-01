@@ -101,3 +101,7 @@ order by 2,3
 Have a look at the complete [TABLEAU](https://public.tableau.com/views/CovidDashboard_16905681686080/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) report to observe the insights and trends derived from the analysis.
 <br></br>![Dashboard](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Tableau%20Dashboard%20-%20COVID%20Project.png)
 
+## Skills 
+ <b>Data Mining & Preprocessing | Database Creation & Querying | Data Visualization | Critical Thinking</b> 
+
+
