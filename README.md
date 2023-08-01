@@ -7,7 +7,7 @@ In this project, I utilized Microsoft SQL Server to develop a perform a data ana
 ## Steps
  1. Data Preprocessing : Removing empty records, editing textual errors and altering datatypes, for eg: nvarchar to float.
  2. Querying and Exploring data using SQL on Microsoft SQL Server.
- 3. Exporting data in the form of summarized tables and visualizing it using <b>Tableau Public Software</b>.
+ 3. Exporting data in the form of summarized tables using <b>Microsoft Excel</b> and visualizing it using <b>Tableau Public Software</b>.
 
 <h2>Technologies Used</h2>
 
