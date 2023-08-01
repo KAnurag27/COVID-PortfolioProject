@@ -1,4 +1,4 @@
-<h1>Anakytics on Coronavirus (COVID-19) Deaths Data</h1>
+<h1>Analytics on Coronavirus (COVID-19) Data</h1>
 
 <h2>Description</h2>
 In this project, I utilized Microsoft SQL Server to develop a perform a data analytics exercise on understanding the depth behind <b>Coronavirus (COVID-19) Deaths</b>. Leveraging the data & resourceful insights retrieved from renowned sources, I have interpreted and examined the data in the most efficient manner possible. Afterwards, I have taken out the most crucial insights out of my SQL analysis and expressed them using <b>Tableau</b>.
@@ -8,6 +8,12 @@ In this project, I utilized Microsoft SQL Server to develop a perform a data ana
  1. Data Preprocessing : Removing empty records, editing textual errors and altering datatypes, for eg: nvarchar to float.
  2. Querying and Exploring data using SQL on Microsoft SQL Server.
  3. Exporting data in the form of summarized tables and visualizing it using <b>Tableau Public Software</b>.
+
+<h2>Technologies Used</h2>
+
+- <b>Microsoft SQL Server</b> 
+- <b>Microsoft Excel</b>
+- <b>Tableau</b>
 
 ## Dataset 
 The COVID-19 dataset is available [HERE](https://ourworldindata.org/covid-deaths).</br>It contains information about countries: Cases, Deaths, Vaccinations,  Demographics...etc 
@@ -20,12 +26,6 @@ The COVID-19 dataset is available [HERE](https://ourworldindata.org/covid-deaths
 | Population |number of inhabitant per country    |
 | new_vaccination|daily number of vaccinations   |
 | new_deaths|daily number of death cases  |
-
-<h2>Technologies Used</h2>
-
-- <b>Microsoft SQL Server</b> 
-- <b>Microsoft Excel</b>
-- <b>Tableau</b>
 
 ## SQL Queries 
 All queries [HERE](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/COVID%20Portfolio%20Project.sql)<br></br>
