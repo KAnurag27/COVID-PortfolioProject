@@ -9,11 +9,14 @@ In this project, I utilized Microsoft SQL Server to develop a perform a data ana
  2. Querying and Exploring data using SQL on Microsoft SQL Server.
  3. Exporting data in the form of summarized tables using <b>Microsoft Excel</b> and visualizing it using <b>Tableau Public Software</b>.
 
-<h2>Technologies Used</h2>
+## Technologies Used
 
 - <b>Microsoft SQL Server</b> 
 - <b>Microsoft Excel</b>
 - <b>Tableau</b>
+
+## Skills 
+ <b>Data Mining & Preprocessing | Database Creation & Querying | Data Visualization | Critical Thinking</b> 
 
 ## Dataset 
 The COVID-19 dataset is available [HERE](https://ourworldindata.org/covid-deaths).</br>It contains information about countries: Cases, Deaths, Vaccinations,  Demographics...etc 
@@ -100,8 +103,3 @@ order by 2,3
 ## Dashboard Report 
 Have a look at the complete [TABLEAU](https://public.tableau.com/views/CovidDashboard_16905681686080/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) report to observe the insights and trends derived from the analysis.
 <br></br>![Dashboard](https://github.com/KAnurag27/COVID-PortfolioProject/blob/main/Tableau%20Dashboard%20-%20COVID%20Project.png)
-
-## Skills 
- <b>Data Mining & Preprocessing | Database Creation & Querying | Data Visualization | Critical Thinking</b> 
-
-
